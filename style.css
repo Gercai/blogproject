@@ -63,8 +63,6 @@ height: 5vw;
     display: grid;
 }
 
-
-
 .gridsect{
     grid-gap: 20px;
     padding: 2vw;
@@ -98,9 +96,7 @@ height: 5vw;
     background-position: center;  
     box-shadow: inset 0 0 0 1000px rgba(255, 227, 227, 0.7);
     height: 800px;
-
 }
-
 
 .figurecontainer{
     width: 100%;
@@ -184,7 +180,11 @@ ul{
 
 ul li {
     list-style: none;
+}
+
+nav ul li {
     position: relative;
+
 }
 
 nav ul li::after{
@@ -208,6 +208,20 @@ img{
 
 @media (max-width: 800px){
 
+    nav > ul{
+        display: flex;
+    }
+
+    nav > ul > li {
+        padding-left: 4em;
+    }
+
+    aside{
+        height: 0px;
+        visibility: hidden;
+        display: contents;
+    }
+
     .mainContent{
         margin-left: 3vw;
     }
@@ -224,4 +238,13 @@ img{
     .container {
         flex-direction: column;
     }
+
+    nav > ul{
+        flex-direction: row;
+    }
+
+    .exception{
+        flex-direction: row;
+    }
+
 }
